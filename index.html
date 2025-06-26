@@ -679,6 +679,92 @@
            RESPONSIVE DESIGN
         ================================================== */
         @media (max-width: 768px) {
+            /* MOBILE PERFORMANCE OPTIMIZATIONS */
+            
+            /* Hide animated particles on mobile for better performance */
+            .bg-animation {
+                display: none;
+            }
+            
+            /* Reduce heavy backdrop-filter and blur effects */
+            nav {
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: none;
+            }
+            
+            .hero-content {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: none;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            }
+            
+            .about {
+                background: rgba(0, 0, 0, 0.7);
+                backdrop-filter: none;
+            }
+            
+            .projects {
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: none;
+            }
+            
+            .contact {
+                background: rgba(0, 0, 0, 0.9);
+            }
+            
+            .contact-form {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: none;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            }
+            
+            /* Reduce heavy box-shadows and effects on cards */
+            .project-card {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: none;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            }
+            
+            .project-card:hover {
+                box-shadow: 0 8px 24px rgba(0, 255, 255, 0.15);
+            }
+            
+            .skill-item {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: none;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .skill-item:hover {
+                box-shadow: 0 4px 16px rgba(0, 255, 255, 0.15);
+            }
+            
+            .footer-social-link {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: none;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .footer-social-link:hover {
+                box-shadow: 0 4px 16px rgba(0, 255, 255, 0.15);
+            }
+            
+            /* Reduce glow effects that can be performance intensive */
+            .hero-text h1 {
+                text-shadow: 0 0 10px var(--neon-cyan);
+                animation: none;
+            }
+            
+            .profile-photo {
+                box-shadow: 0 0 15px var(--neon-cyan);
+                animation: none;
+            }
+            
+            .section-title {
+                text-shadow: 0 0 8px var(--neon-yellow);
+            }
+            
+            /* ORIGINAL MOBILE LAYOUT STYLES (unchanged) */
             .mobile-menu-toggle {
                 display: block;
             }
@@ -690,7 +776,7 @@
                 left: 0;
                 width: 100%;
                 background: rgba(10, 10, 10, 0.95);
-                backdrop-filter: blur(15px);
+                backdrop-filter: none;
                 flex-direction: column;
                 padding: 2rem;
                 border-top: 1px solid var(--neon-cyan);
