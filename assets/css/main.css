@@ -342,7 +342,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -367,7 +367,7 @@
         .project-card:nth-child(4) { animation-delay: 0.8s; }
 
         .project-card.featured {
-            grid-column: span 2;
+            grid-column: span 1;
             background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(177, 156, 217, 0.1));
             border: 2px solid var(--neon-cyan);
             box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
@@ -423,6 +423,13 @@
             font-size: 2rem;
             color: var(--neon-cyan);
             text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* Optional highlight title style for non-featured cards */
+        .project-card .title-highlight {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px var(--neon-cyan);
+            font-family: 'Orbitron', monospace;
         }
 
         .project-card p {
