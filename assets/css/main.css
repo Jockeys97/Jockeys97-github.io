@@ -481,6 +481,11 @@
             letter-spacing: 1px;
         }
 
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
         .project-link::after {
             content: ' →';
             transition: transform 0.3s ease;
@@ -922,5 +927,3 @@
         @keyframes fadeIn {
             to { opacity: 1; }
         }
-
-
