@@ -406,6 +406,10 @@
             transition: all 0.3s ease;
         }
 
+        .signal-thumbnail {
+            object-position: center top;
+        }
+
         .project-card:hover .project-thumbnail {
             border-color: var(--neon-purple);
             box-shadow: 0 0 20px rgba(177, 156, 217, 0.3);
