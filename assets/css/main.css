@@ -186,7 +186,7 @@
             grid-template-columns: 1fr 200px;
             gap: 3rem;
             align-items: center;
-            max-width: 1000px;
+            max-width: 1100px;
             background: var(--glass-bg);
             backdrop-filter: blur(20px);
             border-radius: 20px;
@@ -215,8 +215,20 @@
         .hero-text p {
             font-size: 1.1rem;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
             line-height: 1.8;
+        }
+
+        .hero-summary {
+            max-width: 720px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-summary p {
+            margin: 0;
+        }
+
+        .hero-summary p + p {
+            margin-top: 0.85rem;
         }
 
         .profile-photo {
@@ -256,21 +268,6 @@
             outline-offset: 3px;
         }
 
-        /* ==================================================
-           ABOUT SECTION
-        ================================================== */
-        .about {
-            padding: 5rem 5%;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-        }
-
-        .about .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
         .section-title {
             font-family: 'Orbitron', monospace;
             font-size: 2.5rem;
@@ -279,14 +276,6 @@
             text-shadow: 0 0 15px var(--neon-yellow);
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        .about p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
         }
 
         /* ==================================================
@@ -861,11 +850,6 @@
                 background: rgba(255, 255, 255, 0.15);
                 backdrop-filter: none;
                 box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-            }
-            
-            .about {
-                background: rgba(0, 0, 0, 0.7);
-                backdrop-filter: none;
             }
             
             .projects {
